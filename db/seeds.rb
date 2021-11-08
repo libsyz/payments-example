@@ -1,5 +1,6 @@
 # db/seeds.rb
 puts 'Cleaning database...'
+Order.destroy_all
 Teddy.destroy_all
 Category.destroy_all
 
@@ -11,7 +12,7 @@ puts 'Creating teddies...'
 Teddy.create!(sku: 'original-teddy-bear',
               name: 'Teddy bear',
               category: kids,
-              photo_url: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Teddy-Bears-HD-Images.jpg',
+              photo_url: 'https://m.media-amazon.com/images/I/61NQc9ZZ+mL._AC_SX679_.jpg',
               price: 6_000)
 Teddy.create!(sku: 'prima-sku',
               name: 'Prima Aulia - Le Wagon',
