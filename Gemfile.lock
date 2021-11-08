@@ -217,6 +217,9 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     stripe (5.39.0)
+    stripe_event (2.3.1)
+      activesupport (>= 3.1)
+      stripe (>= 2.8, < 6)
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -273,6 +276,7 @@ DEPENDENCIES
   simple_form
   spring
   stripe (~> 5.39)
+  stripe_event (~> 2.3)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
@@ -280,7 +284,7 @@ DEPENDENCIES
   webpacker (~> 5.0)
 
 RUBY VERSION
-   ruby 2.6.6p146
+   ruby 2.7.0p0
 
 BUNDLED WITH
    2.1.4

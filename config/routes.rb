@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
+  mount StripeEvent::Engine, at: '/stripe-webhooks'
+
   root 'teddies#index'
   resources :teddies, only: [:index, :show]
   resources :orders, only: [:show, :create] do
